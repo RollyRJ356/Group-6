@@ -1,9 +1,12 @@
-# Group-6
-Leader: Rolly arjay D. Juan
+# Group6
+Topic: Food
 
-Member:
-Blessing Estepa, 
-Jobie Torres Dumalan, 
+Title: N/A
+
+Leader: Rolly arjay Juan
+
+Members:
+Blessing Estepa,
+Jobie torres Dumalan,
 Rydell Salibad
 
-Topic: Food

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title >Group 6</title>
+  <link rel="icon" href="img/2.png">
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+</head>
+<body>
+  <nav>
+      <div class="title">   
+        <div><h1 class="name">Kalinga</h1><h3>Delights</h3></div>
+                <ul class="navmenu">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="#">Recipe</a>
+                    <ul class="sub1"><span class="darrow">&#9660;</span>
+                      <li><a href="Binungor.html">Binungor</a></li>
+                      <li><a href="Pinakbet.html">Pinakbet</a></li>
+                      <li><a href="Cabagan.html">Pancit Cabagan</a></li>
+                      <li><a href="Pato.html">Adobong Pato</a></li>
+                      <li><a href="Tinola.html">Tinola</a></li>
+                      <li><a href="Pinapaitan.html">Pinapaitan</a></li>
+                      <li><a href="Dinuguan.html">Dinuguan</a></li>
+                      <li><a href="Sinigang.html">Sinigang</a></li>
+                      <li><a href="Abraw.html">Abraw</a></li>
+                      <li><a href="Sinursuran.html">Sinursuran</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Members</a>
+                    <ul class="sub1"><span class="darrow">&#9660;</span>
+                      <li><a href="#">Rolly arjay Juan</a></li>
+                      <li><a href="#">Jobie Torres Dumalan</a></li>
+                      <li><a href="#">Rydell Salibad</a></li>
+                      <li><a href="#">Blessing Estepa</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Log-out</a></li>
+                </ul>
+          </div>
+  </nav>
+
+
+<div class="slideshow-container">
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 10</div>
+    <img src="img/4.jpg" style="width:100%">
+    <div class="text">Pinakbet</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 10</div>
+    <img src="img/5.jpg" style="width:100%">
+    <div class="text">Pancit Cabagan</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 10</div>
+   <img src="img/6.jpg" style="width:100%">
+		<div class="text">Binungor</div>
+  </div>
+
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 10</div>
+    <img src="img/7.jpg" style="width:100%">
+    <div class="text">Adobo</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 10</div>
+    <img src="img/8.jpg" style="width:100%">
+    <div class="text">Tinola</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 10</div>
+    <img src="img/9.jpg" style="width:100%">
+    <div class="text">Pinapaiitan</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">7 / 10</div>
+    <img src="img/10.jpg" style="width:100%">
+    <div class="text">Dinuguan</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">8 / 10</div>
+    <img src="img/11.jpg" style="width:100%">
+    <div class="text">Sinigang</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">9 / 10</div>
+    <img src="img/12.jpg" style="width:100%">
+    <div class="text">Sinigang</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">10 / 10</div>
+    <img src="img/11.jpg" style="width:100%">
+    <div class="text">Sinigang</div>
+  </div>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+  <span class="dot" onclick="currentSlide(9)"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 9000); // Change image every 2 seconds
+}
+</script>
+
+
+	<table class="content">
+		<tr>
+				<td>
+						<a href="Pinakbet.html"><img class="con" src="img/4.jpg"></a>
+						<a href="Cabagan.html"><img class="con" src="img/5.jpg"></a>
+						<a href="Binungor.html"><img class="con" src="img/6.jpg"></a>
+						<a href="Pato.html"><img class="con" src="img/7.jpg"></a>
+						<a href="Tinola.html"><img class="con" src="img/8.jpg"></a>
+						<a href="Pinapaitan.html"><img class="con" src="img/9.jpg"></a>
+						<a href="Dinuguan.html"><img class="con" src="img/10.jpg"></a>
+						<a href="Sinigang.html"><img class="con" src="img/11.jpg"></a>
+						<a href="Abraw.html"><img class="con" src="img/12.jpg"></a>
+						<a href="Sinursuran.html"><img class="con" src="img/13.jpg"></a>	
+				</td>	
+		</tr>
+				<tr>			
+					<td class="int">
+						<hr>
+						<h1>About us </h1>
+						<p>
+
+Here we are gathering a blog about Kalinga food delights; we are here to introduce some indigenous cuisine here in our province (Kalinga) that we take pride for. Kalinga is a landlocked province in the Philippines situated within the Cordillera Administrative Region in Luzon. Its capital is Tabuk and borders Mountain Province to the south, Abra to the west, Isabela to the east, Cagayan to the northeast, and Apayao to the north. The municipalities of Kaling.a offer different kinds of indigenous foods and mostly have the same ingredients and the same way of cooking but are called differently because of the province’s rich diversity of language.  We are 3rd year college students of the College Department of Engineering and Information Technology taking Bachelor of Science In Information Technology at Kalinga State University which is located at Tabuk City Kalinga. We are here to help you understand more about the different indigenous foods of our province and we hope you will try them and love them as much as we do.</p>
+					</td>
+				</tr>
+		</table>
+
+</body>
+</html>
